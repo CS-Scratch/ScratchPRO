@@ -6,198 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>818</width>
-    <height>489</height>
+    <width>767</width>
+    <height>500</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QGroupBox" name="group_menu">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>-10</y>
-      <width>581</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Menú</string>
-    </property>
-    <widget class="QPushButton" name="btn_nuevo">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>61</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Nuevo</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_guardar">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>20</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Guardar</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_abrir">
-     <property name="geometry">
-      <rect>
-       <x>250</x>
-       <y>20</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Abrir</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btn_guardarcomo">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>20</y>
-       <width>81</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Guardar Como</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton">
-     <property name="geometry">
-      <rect>
-       <x>330</x>
-       <y>20</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Deshacer</string>
-     </property>
-    </widget>
-    <widget class="QGroupBox" name="group_instrucciones">
-     <property name="geometry">
-      <rect>
-       <x>-160</x>
-       <y>50</y>
-       <width>241</width>
-       <height>331</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string>Instrucciones</string>
-     </property>
-     <widget class="QGroupBox" name="group_controles">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>20</y>
-        <width>221</width>
-        <height>101</height>
-       </rect>
-      </property>
-      <property name="title">
-       <string>Controles</string>
-      </property>
-      <widget class="QCheckBox" name="cb_movimiento">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>20</y>
-         <width>81</width>
-         <height>17</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Movimiento</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="cb_apariencia">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>40</y>
-         <width>70</width>
-         <height>17</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Apariencia</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="cb_sonido">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>60</y>
-         <width>70</width>
-         <height>17</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Sonido</string>
-       </property>
-      </widget>
-      <widget class="QCheckBox" name="cb_controles">
-       <property name="geometry">
-        <rect>
-         <x>100</x>
-         <y>20</y>
-         <width>70</width>
-         <height>17</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Controles</string>
-       </property>
-      </widget>
-     </widget>
-     <widget class="QTableView" name="table_instrucciones">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>130</y>
-        <width>211</width>
-        <height>191</height>
-       </rect>
-      </property>
-     </widget>
-    </widget>
-   </widget>
-   <widget class="QProgressBar" name="progressBar">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>370</y>
-      <width>118</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="value">
-     <number>24</number>
-    </property>
-   </widget>
+   <property name="gato" stdset="0">
+    <pixmap>Media/cat1-a.gif</pixmap>
+   </property>
    <widget class="QPushButton" name="btn_ejecutar">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>400</y>
+      <x>100</x>
+      <y>310</y>
       <width>111</width>
       <height>23</height>
      </rect>
@@ -206,14 +30,65 @@
      <string>Ejecutar</string>
     </property>
    </widget>
-   <widget class="QListView" name="listView">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>60</y>
-      <width>256</width>
-      <height>271</height>
+      <x>690</x>
+      <y>250</y>
+      <width>61</width>
+      <height>71</height>
      </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes/gato.gif</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>:/new/imagen/Imagenes/girar_izq.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>9</y>
+      <width>21</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
     </property>
    </widget>
   </widget>
@@ -222,10 +97,17 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>818</width>
+     <width>767</width>
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuScratch">
+    <property name="title">
+     <string>scratch</string>
+    </property>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuScratch"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -236,6 +118,17 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
