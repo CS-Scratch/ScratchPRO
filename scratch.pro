@@ -16,15 +16,16 @@ CONFIG += c++11
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
     gato.cpp \
-    mensajes.cpp
+    mensajes.cpp \
+    ventana.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += \
     gato.h \
-    mensajes.h
+    mensajes.h \
+    ventana.h
 
-FORMS    += mainwindow.ui
+FORMS    +=
 
 DISTFILES += \
     Media/cat1-a.gif \
@@ -33,4 +34,4 @@ DISTFILES += \
 
 RESOURCES += \
     #imagenes.qrc \
-    imagen.qrc \
+    imagen.qrc

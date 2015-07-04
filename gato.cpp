@@ -1,17 +1,19 @@
 #include "gato.h"
 #include <QDebug>
 #include <QRect>
-#include <QGraphicsPixmapItem>
+
 
 //Todavia no funciona falta el metodo Qt Mouse Event con QLabel o tmb puede ser con un sprite
 
 gato::gato()
 {
-    //this->setGeometry(const QRect &
-    this->setPixmap(QPixmap(":/imagen/gato.gif"));
+    this->setPixmap(QPixmap(":/gato.png"));
+
     pos_x=0;
+
     pos_y=0;
-    this->setGeometry(get_posx(),get_posy(),95,111);//posicion por defecto del construtor(se puede añadir tam)
+
+    this->setGeometry(get_posx(),get_posy(),80,80);//posicion por defecto del construtor(se puede añadir tam)
 }
 
 
@@ -35,5 +37,5 @@ cifra gato::get_posy(){
 void gato::mover_gato(cifra a, cifra b){
     set_posx(a);
     set_posy(b);
-    this->setGeometry(get_posx(),get_posy(),95,11);
+    this->setGeometry(get_posx(),get_posy(),80,80);
 }

@@ -1,7 +1,5 @@
 <RCC>
-    <qresource prefix="/imagen">
-        <file>Imagenes/gato.gif</file>
-        <file>Imagenes/gato1.gif</file>
-        <file>Imagenes/girar_izq.png</file>
+    <qresource prefix="/">
+        <file>gato.png</file>
     </qresource>
 </RCC>
