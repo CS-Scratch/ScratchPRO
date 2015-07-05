@@ -17,13 +17,13 @@ CONFIG += c++11
 
 SOURCES += main.cpp\
     gato.cpp \
-    mensajes.cpp \
-    ventana.cpp
+    ventana.cpp \
+    botones.cpp
 
 HEADERS  += \
     gato.h \
-    mensajes.h \
-    ventana.h
+    ventana.h \
+    botones.h
 
 FORMS    +=
 

@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>gato.png</file>
+        <file>girar_der.png</file>
+        <file>girar_izq.png</file>
+        <file>mover.png</file>
     </qresource>
 </RCC>

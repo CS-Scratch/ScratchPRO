@@ -13,7 +13,7 @@ gato::gato()
 
     pos_y=0;
 
-    this->setGeometry(get_posx(),get_posy(),80,80);//posicion por defecto del construtor(se puede añadir tam)
+    this->setGeometry(get_posx(),get_posy(),100,100);//posicion por defecto del construtor(se puede añadir tam)
 }
 
 

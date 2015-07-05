@@ -3,21 +3,31 @@
 
 ventana::ventana()
 {
-    this->setWindowTitle(QString::fromUtf8("SCRATCH-PRO"));
-    this->setFixedSize(800,500);
+
+    this->setWindowTitle("SCRATCH-PRO");
+    this->setFixedSize(1000,600);
 
 
-    //crear la pantalla donde se va a mostrar el gato
-    pantalla = new QWidget(this);   //herencia
-    //tamaño de la pantalla donde se vaa ha imprimir
-    pantalla->setGeometry(0,0,200,800);
-    //Color de la pantalla
-    pantalla->setStyleSheet("background-color:#FFFFFF;");
 
+    pantgat = new QWidget(this);
+    pantgat->setGeometry(650,0,450,600);
+    pantgat->setStyleSheet("background-color:grey;");
     gat =new gato();
-    gat->setParent(pantalla);
+    gat->setParent(pantgat);
 
-    //gat->setParent(pantalla);
+
+    pantboton = new QWidget(this);
+    pantboton->setGeometry(0,0,350,600);
+    pantboton->setStyleSheet("background-color:white;");
+    boton =new botones();
+    boton->setParent(pantboton);
+
+    pantejecutar = new QWidget(this);
+    pantejecutar->setGeometry(350,0,300,600);
+    pantejecutar->setStyleSheet("background-color:#D6E780;");
+    //gat =new gato();
+    //gat->setParent(pantgat);
 
 }
+
 
