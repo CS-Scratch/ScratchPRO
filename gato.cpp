@@ -1,15 +1,16 @@
 #include "gato.h"
-//Todavia
+//AHORA SI FUNCIONA
 
-gato::gato(QWidget *p)
+gato::gato()
 {
     this->setPixmap(QPixmap(":/gato.png"));
     pos_x=0;
     pos_y=0;
-    this->setGeometry(get_posx(),get_posy(),100,100);
-    this->setParent(p);
+    this->setGeometry(get_posx(),get_posy(),90,90);
 
 }
+
+
 
 
 void gato::set_posx(cifra x){
@@ -32,5 +33,5 @@ cifra gato::get_posy(){
 void gato::mover_gato(cifra a, cifra b){
     set_posx(a);
     set_posy(b);
-    this->setGeometry(get_posx(),get_posy(),80,80);
+    this->setGeometry(get_posx(),get_posy(),100,100);
 }
