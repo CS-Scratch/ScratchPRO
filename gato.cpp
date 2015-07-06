@@ -1,19 +1,14 @@
 #include "gato.h"
-#include <QDebug>
-#include <QRect>
+//Todavia
 
-
-//Todavia no funciona falta el metodo Qt Mouse Event con QLabel o tmb puede ser con un sprite
-
-gato::gato()
+gato::gato(QWidget *p)
 {
     this->setPixmap(QPixmap(":/gato.png"));
-
     pos_x=0;
-
     pos_y=0;
+    this->setGeometry(get_posx(),get_posy(),100,100);
+    this->setParent(p);
 
-    this->setGeometry(get_posx(),get_posy(),100,100);//posicion por defecto del construtor(se puede añadir tam)
 }
 
 

@@ -9,11 +9,8 @@ int main(int argc, char *argv[])
     //creo un objeto w de ventana donde se encuentra todo lo necesario para imprimir al gato
     ventana * wind = new ventana();
 
-    //wind->start();
+    //wind->load_sprites();
     wind->show();
-
 
     return a.exec();
 }
-
-
